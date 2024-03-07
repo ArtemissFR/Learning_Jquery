@@ -1,1 +1,7 @@
+.afficher::before {
+    content: "\2193";
+}
 
+.moins::before {
+    content: "\2191";
+}
