@@ -152,4 +152,82 @@ $(document).ready(function(){
     var formattedDate = today.toLocaleDateString();
     footerdate.append('<p>Date du jour : ' + formattedDate + '</p>');
 
+// ------------------------------------------------------------------------------- Agrandir réduire Image 1 - Configuration -------------------------------------------------------------------------------
+
+    // Sélectionner l'image par son balise
+    var image1 = $('.img1');
+
+    // Taille initiale de l'image
+    var tailleInitiale = 200;
+
+    // Gérer le clic sur l'image
+    image1.click(function () {
+        // Obtenir la taille actuelle de l'image
+        var tailleActuelle = image1.height();
+
+        // Si la taille actuelle est la taille initiale, agrandir l'image
+        // Sinon, réduire l'image à sa taille initiale
+        if (tailleActuelle === tailleInitiale) {
+            image1.animate({
+                height: "400px", // Changer la taille d'agrandissement souhaitée
+            }, 500);
+        } else {
+            image1.animate({
+                height: tailleInitiale + "px",
+            }, 500);
+        }
+    });
+
+// ------------------------------------------------------------------------------- Agrandir réduire Image 2 - Configuration -------------------------------------------------------------------------------
+
+    // Sélectionner l'image par son balise
+    var image2 = $('.img2');
+
+    // Taille initiale de l'image
+    var tailleInitiale = 200;
+
+    // Gérer le clic sur l'image
+    image2.click(function () {
+        // Obtenir la taille actuelle de l'image
+        var tailleActuelle = image2.height();
+
+        // Si la taille actuelle est la taille initiale, agrandir l'image
+        // Sinon, réduire l'image à sa taille initiale
+        if (tailleActuelle === tailleInitiale) {
+            image2.animate({
+                height: "400px", // Changer la taille d'agrandissement souhaitée
+            }, 500);
+        } else {
+            image2.animate({
+                height: tailleInitiale + "px",
+            }, 500);
+        }
+    });
+
+// ------------------------------------------------------------------------------- Agrandir réduire Image 3 - Configuration -------------------------------------------------------------------------------
+
+    // Sélectionner l'image par son balise
+    var image3 = $('.img3');
+
+    // Taille initiale de l'image
+    var tailleInitiale = 200;
+
+    // Gérer le clic sur l'image
+    image3.click(function () {
+        // Obtenir la taille actuelle de l'image
+        var tailleActuelle = image3.height();
+
+        // Si la taille actuelle est la taille initiale, agrandir l'image
+        // Sinon, réduire l'image à sa taille initiale
+        if (tailleActuelle === tailleInitiale) {
+            image3.animate({
+                height: "400px", // Changer la taille d'agrandissement souhaitée
+            }, 500);
+        } else {
+            image3.animate({
+                height: tailleInitiale + "px",
+            }, 500);
+        }
+    });
+
 });
