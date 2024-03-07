@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 // ------------------------------------------------------------------------------- BUTTON 2 - Configuration -------------------------------------------------------------------------------
     
-    $('.button1').click(function () {
+    $('.button2').click(function () {
         var visibilite = $('.footer').css('display');
         if (visibilite == "none") {
             $('.footer').animate({
@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 // ------------------------------------------------------------------------------- BUTTON 3 - Configuration -------------------------------------------------------------------------------
     
-    $('.button1').click(function () {
+    $('.button3').click(function () {
         var visibilite = $('.footer').css('display');
         if (visibilite == "none") {
             $('.footer').animate({
