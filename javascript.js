@@ -26,7 +26,7 @@ $(document).ready(function(){
         'https://www.toutelasignaletique.com/21357-thickbox_default/chiffre-3-en-alu-couleur-et-dimensions-au-choix.jpg'
     ];
 
-    // Ajouter un bouton "En savoir plus" à la fin de l'article 1
+    // Ajouter un bouton "En savoir plus" à la fin de chaque article avec un lien différent
     $('article').each(function (index) {
         var articleFooter = $(this).find('.footer1');
         var enSavoirPlusButton = $('<button class="en-savoir-plus" type="button">En savoir plus</button>');
@@ -38,7 +38,7 @@ $(document).ready(function(){
         articleFooter.append(enSavoirPlusButton);
     });
 
-    // Ajouter un bouton "En savoir plus" à la fin de l'article 2
+    // Ajouter un bouton "En savoir plus" à la fin de chaque article avec un lien différent
     $('article').each(function (index) {
         var articleFooter = $(this).find('.footer2');
         var enSavoirPlusButton = $('<button class="en-savoir-plus" type="button">En savoir plus</button>');
@@ -50,7 +50,7 @@ $(document).ready(function(){
         articleFooter.append(enSavoirPlusButton);
     });
 
-    // Ajouter un bouton "En savoir plus" à la fin de l'article 3
+    // Ajouter un bouton "En savoir plus" à la fin de chaque article avec un lien différent
     $('article').each(function (index) {
         var articleFooter = $(this).find('.footer3');
         var enSavoirPlusButton = $('<button class="en-savoir-plus" type="button">En savoir plus</button>');
@@ -132,4 +132,24 @@ $(document).ready(function(){
     });
 
     
+// ------------------------------------------------------------------------------- Code permettant d'enlever l'article 2 - Configuration -------------------------------------------------------------------------------
+
+    // Sélectionner tous les articles
+    var articles = $('article');
+
+    // Supprimer le deuxième article
+    if (articles.length >= 2) {
+        articles.eq(1).remove();
+    }
+
+// ------------------------------------------------------------------------------- Ajout de la date du jour au Footer 1 - Configuration -------------------------------------------------------------------------------
+
+    // Sélectionner le footer
+    var footerdate = $('.footer1');
+
+    // Ajouter la date du jour
+    var today = new Date();
+    var formattedDate = today.toLocaleDateString();
+    footerdate.append('<p>Date du jour : ' + formattedDate + '</p>');
+
 });
