@@ -13,6 +13,18 @@ $(document).ready(function(){
     a.attr({
         href: 'https://codeshare.io/openIt',
         target: '_blank'
+
+        // Sélection de la liste du menu
+    var menuList = $('ul');
+
+    // Création des nouveaux éléments li
+    var articlesLi = $('<li><a href="#articles">Articles</a></li>');
+    var formulaireLi = $('<li><a href="#formulaire">Formulaire</a></li>');
+
+    // Ajout des nouveaux éléments à la liste
+    menuList.append(articlesLi);
+    menuList.append(formulaireLi);
+    
     });
 
     /*var article = $('section').children();
