@@ -6,8 +6,10 @@ $(document).ready(function(){
     $('.footer').hide();
     $('img').css("height", "200px");
 
-
-    $('ul').append('<li>li 1</li><br><li>li 2</li>');
+    var articlesLi = $('<li><a href="#articles">Articles</a></li>');
+    var formulaireLi = $('<li><a href="#formulaire">Formulaire</a></li>');
+    $('ul').append(articlesLi, formulaireLi);
+ //   $('ul').append('<li>li 1</li><br><li>li 2</li>');
 
     var a = $("article").find("a");
     a.attr({
