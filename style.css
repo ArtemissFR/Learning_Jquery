@@ -12,6 +12,8 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    background-color: #fff; /* Fond blanc */
+    color: #000; /* Texte noir */
 }
 
 ul {
