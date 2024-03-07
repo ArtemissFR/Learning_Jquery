@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     // Ajouter un bouton "En savoir plus" à la fin de chaque article avec un lien différent
     $('article').each(function (index) {
-        var articleFooter = $(this).find('.footer');
+        var articleFooter = $(this).find('.footer1','.footer2','.footer3');
         var enSavoirPlusButton = $('<button class="en-savoir-plus" type="button">En savoir plus</button>');
 
         enSavoirPlusButton.click(function () {
