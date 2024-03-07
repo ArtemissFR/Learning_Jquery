@@ -37,9 +37,9 @@ $(document).ready(function(){
 // ------------------------------------------------------------------------------- BUTTON 1 - Configuration -------------------------------------------------------------------------------
     
     $('.button1').click(function () {
-        var visibilite = $('.footer').css('display');
+        var visibilite = $('.footer1').css('display');
         if (visibilite == "none") {
-            $('.footer').animate({
+            $('.footer1').animate({
                 opacity: 1,
                 height: "toggle"
             }, 500, function () {
@@ -47,7 +47,7 @@ $(document).ready(function(){
             });
             $(this).text("Afficher moins");
         } else {
-            $(".footer").animate({
+            $(".footer1").animate({
                 opacity: 0,
                 height: "toggle"
             }, 500, function(){
@@ -60,9 +60,9 @@ $(document).ready(function(){
 // ------------------------------------------------------------------------------- BUTTON 2 - Configuration -------------------------------------------------------------------------------
     
     $('.button2').click(function () {
-        var visibilite = $('.footer').css('display');
+        var visibilite = $('.footer2').css('display');
         if (visibilite == "none") {
-            $('.footer').animate({
+            $('.footer2').animate({
                 opacity: 1,
                 height: "toggle"
             }, 500, function () {
@@ -70,7 +70,7 @@ $(document).ready(function(){
             });
             $(this).text("Afficher moins");
         } else {
-            $(".footer").animate({
+            $(".footer2").animate({
                 opacity: 0,
                 height: "toggle"
             }, 500, function(){
@@ -83,9 +83,9 @@ $(document).ready(function(){
 // ------------------------------------------------------------------------------- BUTTON 3 - Configuration -------------------------------------------------------------------------------
     
     $('.button3').click(function () {
-        var visibilite = $('.footer').css('display');
+        var visibilite = $('.footer3').css('display');
         if (visibilite == "none") {
-            $('.footer').animate({
+            $('.footer3').animate({
                 opacity: 1,
                 height: "toggle"
             }, 500, function () {
@@ -93,7 +93,7 @@ $(document).ready(function(){
             });
             $(this).text("Afficher moins");
         } else {
-            $(".footer").animate({
+            $(".footer3").animate({
                 opacity: 0,
                 height: "toggle"
             }, 500, function(){
