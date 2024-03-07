@@ -14,7 +14,7 @@ $(document).ready(function(){
         href: 'https://codeshare.io/openIt',
         target: '_blank'
 
-        // Sélection de la liste du menu
+    // Sélection de la liste du menu
     var menuList = $('ul');
 
     // Création des nouveaux éléments li
