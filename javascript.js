@@ -17,26 +17,6 @@ $(document).ready(function(){
     
     });
 
-    /*var article = $('section').children();
-    var article = article.eq(1);
-    article2.remove();
-
-    function getDateDuJour(){
-        var date = new Date();
-        var jour = date.getDate();
-        var mois = date.getMonth() + 1;
-        var annee = date.getFullYear();
-        var dateFormatee = (jour < 10 ? '0' : '') + jour + '/' + (mois < 10 ? '0' : '') + mois + '/' + annee;
-        return dateFormatee;
-    }
-    var date = getDateDuJour();
-    $(".footer").append("<p>Date du jour: " + date + "</p>");
-
-    $("article img").click(function(){
-        $(this).animate({
-            opacity: 1,
-            "height": "100px"}, 2000);
-    });*/
 
     $('.button1').click(function () {
         var visibilite = $('.footer').css('display');
