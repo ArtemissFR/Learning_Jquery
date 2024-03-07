@@ -34,6 +34,8 @@ $(document).ready(function(){
         articleFooter.append(enSavoirPlusButton);
     });
 
+// ------------------------------------------------------------------------------- BUTTON 1 - Configuration -------------------------------------------------------------------------------
+    
     $('.button1').click(function () {
         var visibilite = $('.footer').css('display');
         if (visibilite == "none") {
@@ -54,4 +56,52 @@ $(document).ready(function(){
             $(this).text("Afficher plus");
         }
     });
+
+// ------------------------------------------------------------------------------- BUTTON 2 - Configuration -------------------------------------------------------------------------------
+    
+    $('.button1').click(function () {
+        var visibilite = $('.footer').css('display');
+        if (visibilite == "none") {
+            $('.footer').animate({
+                opacity: 1,
+                height: "toggle"
+            }, 500, function () {
+                $(this).css('display', 'block');
+            });
+            $(this).text("Afficher moins");
+        } else {
+            $(".footer").animate({
+                opacity: 0,
+                height: "toggle"
+            }, 500, function(){
+                $(this).css('display', 'none');
+            });
+            $(this).text("Afficher plus");
+        }
+    });
+
+// ------------------------------------------------------------------------------- BUTTON 3 - Configuration -------------------------------------------------------------------------------
+    
+    $('.button1').click(function () {
+        var visibilite = $('.footer').css('display');
+        if (visibilite == "none") {
+            $('.footer').animate({
+                opacity: 1,
+                height: "toggle"
+            }, 500, function () {
+                $(this).css('display', 'block');
+            });
+            $(this).text("Afficher moins");
+        } else {
+            $(".footer").animate({
+                opacity: 0,
+                height: "toggle"
+            }, 500, function(){
+                $(this).css('display', 'none');
+            });
+            $(this).text("Afficher plus");
+        }
+    });
+
+    
 });
