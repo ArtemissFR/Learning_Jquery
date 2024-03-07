@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    //$('body').html('Texte blalblallala');
-    $('ul').html('<li>menu</li>')
+    $('ul').html('<li>MENU</li>')
     $('section:nth-child(2)');
 
     $('.footer').hide();
