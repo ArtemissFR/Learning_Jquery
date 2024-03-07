@@ -35,3 +35,27 @@ article {
 footer {
     text-align: center;
 }
+
+/* Styles des boutons */
+button {
+    background-color: #007bff; /* Fond bleu */
+    color: #fff; /* Texte blanc */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover sur les boutons */
+button:hover {
+    background-color: #0056b3; /* Fond bleu foncé au survol */
+}
+
+/* Style du lien dans la section des articles */
+.article-footer a {
+    color: #007bff; /* Couleur bleue pour le lien */
+    text-decoration: none;
+}
+
+.article-footer a:hover {
+    text-decoration: underline; /* Souligné au survol du lien */
+}
