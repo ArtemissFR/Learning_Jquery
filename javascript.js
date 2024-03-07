@@ -2,7 +2,9 @@ $(document).ready(function(){
     $('ul').html('<li>MENU</li>')
     $('section:nth-child(2)');
 
-    $('.footer').hide();
+    $('.footer1').hide();
+    $('.footer2').hide();
+    $('.footer3').hide();
     $('img').css("height", "200px");
 
     var articlesLi = $('<li><a href="#articles">Articles</a></li>');
