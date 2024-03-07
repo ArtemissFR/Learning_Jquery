@@ -5,3 +5,32 @@
 .moins::before {
     content: "\2191";
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
